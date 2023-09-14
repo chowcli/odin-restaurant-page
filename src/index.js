@@ -1,6 +1,6 @@
-import appendHeader from "./header";
-import appendFooter from "./footer";
-import appendMain_Home from "./pages/home";
+import appendHeader from "./header.js";
+import appendFooter from "./footer.js";
+import appendMain_Home from "./pages/home.js";
 
 const content = document.getElementById("content");
 appendHeader(content);
