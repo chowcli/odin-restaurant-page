@@ -1,6 +1,6 @@
 // create an array store all relative path files of image which start with pic
 const dish_images = require
-  .context("./src/images", false, /^\.\/pic.*$/)
+  .context("../../assets/images", false, /^\.\/pic.*$/)
   .keys();
 
 const dishInfo = {
