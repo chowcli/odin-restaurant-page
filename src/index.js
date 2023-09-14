@@ -4,5 +4,5 @@ import appendMain_Home from "./pages/home.js";
 
 const content = document.getElementById("content");
 appendHeader(content);
-appendMain_Home(content);
+// appendMain_Home(content);
 appendFooter(content);
