@@ -7,6 +7,8 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
+    assetModuleFilename: "[name][ext]", // change back file name to original because webpack will generate new file name
   },
 
   devtool: "inline-source-map",
