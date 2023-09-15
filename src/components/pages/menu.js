@@ -69,20 +69,4 @@ function menuDOM() {
   return menuContainer;
 }
 
-function mainDOM() {
-  const main = document.createElement("main");
-  main.classList.add("main");
-
-  const menuContainer = menuDOM();
-  main.appendChild(menuContainer);
-
-  return main;
-}
-
-function appendMain_Menu(content) {
-  const main = mainDOM();
-
-  content.appendChild(main);
-}
-
-export default appendMain_Menu;
+export default menuDOM;

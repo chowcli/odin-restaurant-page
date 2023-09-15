@@ -45,20 +45,11 @@ function aboutDOM(main) {
   main.appendChild(aboutSection);
 }
 
-function mainDOM() {
-  const main = document.createElement("main");
-  main.classList.add("main");
-
-  introDOM(main); // include append all intro-section into main
+function homeDOM(main) {
+  introDOM(main);
   aboutDOM(main);
 
   return main;
 }
 
-function appendMain_Home(content) {
-  const main = mainDOM();
-
-  content.appendChild(main);
-}
-
-export default appendMain_Home;
+export default homeDOM;

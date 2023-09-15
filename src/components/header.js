@@ -4,11 +4,8 @@ function createLiElement(ul) {
     const element = document.createElement("li");
     element.classList.add("link");
     element.setAttribute("id", `site-${liTextContent[i].toLowerCase()}`);
+    element.textContent = liTextContent[i];
 
-    const a = document.createElement("a");
-    a.textContent = liTextContent[i];
-
-    element.appendChild(a);
     ul.appendChild(element);
   }
 }
