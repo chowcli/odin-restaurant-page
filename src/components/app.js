@@ -2,6 +2,7 @@ import appendHeader from "./header.js";
 import appendFooter from "./footer.js";
 import homeDOM from "./pages/home.js";
 import menuDOM from "./pages/menu.js";
+import contactDOM from "./pages/contact.js";
 
 function switchMainContent(mainElement, content) {
   const navBar = document.getElementById("site-navBar");
@@ -49,7 +50,8 @@ function switchMainContent(mainElement, content) {
         mainElement.classList.replace("menu", "contact");
       }
 
-      mainElement.innerHTML = contactDOM();
+      mainElement.innerHTML = "";
+      mainElement.appendChild(contactDOM());
       return;
     }
   });
