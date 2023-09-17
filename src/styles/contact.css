@@ -1,0 +1,47 @@
+.contact-container {
+  height: 100vh;
+  background-image: var(--bg-shadow), url(../assets/images/contact-bg.jpg);
+  background-size: cover;
+  font-family: "Playfair Display";
+  padding: 50px 0;
+
+  & h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 3.5rem;
+    color: var(--bright-gold);
+  }
+}
+
+.store-info {
+  color: var(--light);
+  padding: 100px 0;
+  margin: auto;
+  max-width: 1000px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-self: center;
+  align-self: center;
+
+  > div {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--light);
+    padding: 0 50px 20px;
+    place-self: start center;
+
+    > div {
+      padding: 0 0 10px;
+    }
+  }
+
+  .icon {
+    width: 50px;
+    filter: invert(70%) sepia(88%) saturate(304%) hue-rotate(1deg)
+      brightness(104%) contrast(102%);
+    margin: 20px 0;
+  }
+}

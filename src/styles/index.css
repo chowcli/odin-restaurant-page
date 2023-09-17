@@ -32,10 +32,11 @@ html {
 :root {
   --yellow: rgb(239, 213, 149);
   --light: rgb(255, 243, 218);
+  --white: rgb(255, 255, 255);
   --black: rgb(20, 20, 20);
   --bright-gold: rgb(255, 219, 81);
 
-  --box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.3);
+  --box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.5);
   --bg-shadow: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   --bg-img: url(../assets/images/background.jpg);
 }

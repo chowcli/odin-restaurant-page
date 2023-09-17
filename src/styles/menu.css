@@ -1,0 +1,53 @@
+.menu-container {
+  background-image: var(--bg-shadow), url(../assets/images/menu-bg.jpg);
+  background-size: cover;
+  padding: 50px;
+
+  #menu-title {
+    text-align: center;
+    margin-bottom: 80px;
+
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    color: var(--yellow);
+  }
+}
+
+.menu-items {
+  margin: auto;
+  padding: 50px 100px;
+  max-width: 1000px;
+  font-family: "Playfair Display";
+
+  > .item {
+    display: grid;
+    grid-template-columns: minmax(100px, 200px) 1fr;
+    margin-bottom: 30px;
+    background-color: var(--white);
+
+    & img {
+      filter: brightness(85%);
+      width: 100%;
+    }
+  }
+}
+
+.item .item {
+  padding: 5px 30px 0 5px;
+
+  .upper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+
+    & span {
+      font-size: 1.2rem;
+    }
+  }
+
+  & p {
+    font-size: 1.1rem;
+    padding-right: 100px;
+  }
+}
