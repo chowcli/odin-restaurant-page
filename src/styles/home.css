@@ -1,0 +1,48 @@
+.intro-section {
+  background-image: var(--bg-shadow), var(--bg-img);
+  background-size: cover;
+  padding: 100px;
+
+  text-align: center;
+
+  #intro-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+    color: var(--bright-gold);
+    margin: 50px;
+  }
+
+  #intro-content {
+    font-family: "Playfair Display";
+    font-style: italic;
+    color: var(--yellow);
+    font-size: 1.4rem;
+    line-height: 3rem;
+
+    padding: 30px 100px;
+  }
+}
+
+.about-section {
+  padding: 50px 80px;
+  background-color: var(--light);
+
+  font-family: "Playfair Display";
+
+  #about-title {
+    width: 15%;
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 15px;
+  }
+
+  #about-content {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+    & p {
+      margin: 20px 0;
+    }
+  }
+}

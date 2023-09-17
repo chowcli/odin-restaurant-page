@@ -3,6 +3,10 @@ import contact from "../../assets/icon/contact.svg";
 import hours from "../../assets/icon/hours.svg";
 
 function locationDOM(storeInfo) {
+  const icon = new Image();
+  icon.classList.add("icon");
+  icon.src = address;
+
   const p1 = document.createElement("p");
   p1.textContent = "123 Wing Street";
 
@@ -11,6 +15,8 @@ function locationDOM(storeInfo) {
 
   const location = document.createElement("div");
   location.id = "location";
+
+  location.appendChild(icon);
   location.appendChild(p1);
   location.appendChild(p2);
 
@@ -20,6 +26,11 @@ function locationDOM(storeInfo) {
 function openHoursDOM(storeInfo) {
   const openHour = document.createElement("div");
   openHour.id = "open-hours";
+
+  const icon = new Image();
+  icon.classList.add("icon");
+  icon.src = hours;
+  openHour.appendChild(icon);
 
   const divInfo = {
     h5: ["Mon - Fri", "Saturday", "Sunday"],
@@ -46,6 +57,10 @@ function openHoursDOM(storeInfo) {
 }
 
 function contactInfoDOM(storeInfo) {
+  const icon = new Image();
+  icon.classList.add("icon");
+  icon.src = contact;
+
   const p1 = document.createElement("p");
   p1.id = "phone-num";
   p1.textContent = "(555) 123-4567";
@@ -56,6 +71,8 @@ function contactInfoDOM(storeInfo) {
 
   const div = document.createElement("div");
   div.id = "contact-info";
+
+  div.appendChild(icon);
   div.appendChild(p1);
   div.appendChild(p2);
 

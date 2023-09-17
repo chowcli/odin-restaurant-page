@@ -1,0 +1,18 @@
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 1.2rem;
+
+  background-color: var(--black);
+  color: var(--bright-gold);
+  cursor: pointer;
+}
+
+.copyright:hover {
+  color: var(--light);
+}

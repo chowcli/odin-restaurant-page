@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* custom font */
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../assets/fonts/DancingScript.woff) format("woff"),
+    url(../assets/fonts/DancingScript.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../assets/fonts/PlayfairDisplay.woff) format("woff"),
+    url(../assets/fonts/PlayfairDisplay.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../assets/fonts/PlayfairDisplay-Italic.woff) format("woff"),
+    url(../assets/fonts/PlayfairDisplay-Italic.woff2) format("woff2");
+  font-style: italic;
+}
+
+:root {
+  --yellow: rgb(239, 213, 149);
+  --light: rgb(255, 243, 218);
+  --black: rgb(20, 20, 20);
+  --bright-gold: rgb(255, 219, 81);
+
+  --box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.3);
+  --bg-shadow: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  --bg-img: url(../assets/images/background.jpg);
+}
+
+body {
+  line-height: 150%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
