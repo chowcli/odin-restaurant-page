@@ -22,8 +22,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  justify-self: center;
-  align-self: center;
 
   > div {
     text-align: center;
