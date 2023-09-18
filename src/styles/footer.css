@@ -13,6 +13,13 @@
   cursor: pointer;
 }
 
-.copyright:hover {
-  color: var(--light);
+.copyright {
+  & a {
+    text-decoration: none;
+    color: var(--bright-gold);
+  }
+
+  & a:hover {
+    color: var(--light);
+  }
 }

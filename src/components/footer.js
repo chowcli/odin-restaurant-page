@@ -4,7 +4,11 @@ function footerDom() {
 
   const p = document.createElement("p");
   p.classList.add("copyright");
-  p.textContent = `© ${new Date().getFullYear()} Wing Wanderer`;
+
+  const a = document.createElement("a");
+  a.href = "https://github.com/chowcli/odin-restaurant-page.git";
+  a.textContent = `© ${new Date().getFullYear()} Wing Wanderer`;
+  p.appendChild(a);
 
   footer.appendChild(p);
 
